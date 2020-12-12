@@ -36,7 +36,7 @@ def logout():
         #   And make sure to redirect from there back to the login page
   
 
-    return redirect(url_for('https://login.live.com/oauth20_desktop.srf'))
+    return redirect(url_for('login'))
 
 
 @app.route(Config.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD
@@ -65,7 +65,7 @@ def authorized():
         login_user(user)
         _save_cache(cache)
 
-    return redirect(url_for('https://mslogin-surya.azurewebsites.net/.auth/login/aad/callback'))
+    return redirect(url_for('home'))
 
 
 def _load_cache():
