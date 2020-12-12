@@ -65,7 +65,7 @@ def authorized():
         login_user(user)
         _save_cache(cache)
 
-    return redirect(url_for('https://mslogin-surya.azurewebsites.net'))
+    return redirect(url_for('https://mslogin-surya.azurewebsites.net/.auth/login/aad/callback'))
 
 
 def _load_cache():
