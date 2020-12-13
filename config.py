@@ -7,11 +7,11 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/suryamishrasmgmail.onmicrosoft.com"
 
     # TODO: Enter your application client ID here
-    CLIENT_ID = "3db03fa0-6222-4d92-84c6-f5450415dd40"
+    CLIENT_ID ="3db03fa0-6222-4d92-84c6-f5450415dd40"
 
     # TODO: Enter the redirect path you want to use for OAuth requests
     #   Note that this will be the end of the URI entered back in Azure AD
-    REDIRECT_PATH = "/signin-oidc"  # Used to form an absolute URL, 
+    REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL, 
         # which must match your app's redirect_uri set in AAD
 
     # You can find the proper permission names from this document
